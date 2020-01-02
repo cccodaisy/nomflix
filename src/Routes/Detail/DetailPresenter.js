@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import styled from "styled-components";
 import Loader from "Components/Loader";
 import Message from "Components/Message";
+import DeatilTabs from "Components/DetailTabs";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -68,7 +69,7 @@ const Overview = styled.p`
   font-size: 12px;
   opacity: 0.7;
   line-height: 1.5;
-  width: 50%;
+  width: 80%;
 `;
 
 
@@ -127,6 +128,7 @@ const DetailPresenter = ({ result, loading, error }) =>
           </Item>
         </ItemContainer>
         <Overview>{result.overview}</Overview>
+        <DeatilTabs />
       </Data>
     </Content>
   </Container>
